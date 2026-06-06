@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@theme {
+  --font-arcade: "Press Start 2P", monospace;
+  --font-terminal: "Share Tech Mono", monospace;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #0a0014;
+  color: #e0e0ff;
+  font-family: var(--font-terminal);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.scanlines::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 50;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0, 0, 0, 0.15) 2px,
+    rgba(0, 0, 0, 0.15) 4px
+  );
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+.animate-blink {
+  animation: blink 1s ease-in-out infinite;
+}
+
+@keyframes flash-red {
+  0% { opacity: 0.7; }
+  100% { opacity: 0; }
+}
+
+.animate-flash-red {
+  animation: flash-red 0.35s ease-out forwards;
+}

@@ -1,0 +1,10 @@
+export const COLS = 10;
+export const ROWS = 20;
+export const DROP_MS_PLAYER = 800;
+export const DROP_MS_CPU = 1200;
+export const CPU_ANSWER_MIN_MS = 8000;
+export const CPU_ANSWER_MAX_MS = 12000;
+export const CPU_ACCURACY = 0.7;
+export const GARBAGE_COLOR = 'gray';
+export const PLAYER_COLOR = 'cyan';
+export const CPU_COLOR = 'magenta';
