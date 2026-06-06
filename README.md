@@ -76,6 +76,3 @@ public/audio/synthwave.mp3
 
 Feel free to use it or tweak it for your own learning!
 
-```
-
-```
